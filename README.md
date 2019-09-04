@@ -2,7 +2,7 @@
 
 #### YAML gem for [mruby](https://github.com/mruby/mruby)
 
-mruby-yaml wraps [libyaml](http://pyyaml.org/wiki/LibYAML) and therefore complies with the YAML 1.1 standard. File IO is not supported, as this would create a dependency on other mruby gems.
+mruby-yaml wraps [libyaml](https://pyyaml.org/wiki/LibYAML) and therefore complies with the YAML 1.1 standard. File IO is not supported, as this would create a dependency on other mruby gems.
 
 ### Defines
 | Name                             | Default | Description                    |
@@ -10,10 +10,10 @@ mruby-yaml wraps [libyaml](http://pyyaml.org/wiki/LibYAML) and therefore complie
 | MRUBY_YAML_NULL                  | true    | enables `null`, `Null`, `NULL` |
 | MRUBY_YAML_BOOLEAN_ON            | true    | enables `on`, `On`, `ON`       |
 | MRUBY_YAML_BOOLEAN_YES           | true    | enables `yes`, `Yes`, `YES`    |
-| MRUBY_YAML_BOOLEAN_SHORTHAND_YES | true    | enables `y`, `Y`               |
+| MRUBY_YAML_BOOLEAN_SHORTHAND_YES | false   | enables `y`, `Y`               |
 | MRUBY_YAML_BOOLEAN_OFF           | true    | enables `off`, `Off`, `OFF`    |
 | MRUBY_YAML_BOOLEAN_NO            | true    | enables `no`, `No`, `NO`       |
-| MRUBY_YAML_BOOLEAN_SHORTHAND_NO  | true    | enables `n`, `N`               |
+| MRUBY_YAML_BOOLEAN_SHORTHAND_NO  | false   | enables `n`, `N`               |
 
 If you need to check if a feature is supported at runtime, replace `MRUBY_YAML_` with `SUPPORT_` for the runtime equivalent.
 
